@@ -21,7 +21,7 @@ import static java.net.HttpURLConnection.HTTP_OK;
  */
 public class StandardDownloader implements Downloader {
 
-    private static final int BUFFER_SIZE = 1024000000;
+    private static final int BUFFER_SIZE = 50000000;
     private static int downloadCount = 0;
 
     private final Credentials credentials;
