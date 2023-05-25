@@ -215,7 +215,7 @@ public class StudipTelegramBot {
 
     private void createFoldersAndDownloadFiles(Course course, String downloadpath) {
         //if (!course.getRootFolder().getChilds().isEmpty())
-        studIPBot.downloadFilesAndCreateFolders(course.getRootFolder().getChilds(), Paths.get("data/" + config.getDownloadFolder() + "/" + downloadpath + "/"), config.getGoogleDriveConfig().isEnabled(), config.getGoogleDriveConfig().getRootDirectory());
+        studIPBot.downloadFilesAndCreateFolders(course.getRootFolder().getChilds(), Paths.get(config.getDownloadFolder() + "/" + downloadpath + "/"), config.getGoogleDriveConfig().isEnabled(), config.getGoogleDriveConfig().getRootDirectory());
 
     }
 
