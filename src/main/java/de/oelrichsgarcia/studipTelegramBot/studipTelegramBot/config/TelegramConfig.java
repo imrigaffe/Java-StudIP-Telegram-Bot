@@ -5,6 +5,7 @@ package de.oelrichsgarcia.studipTelegramBot.studipTelegramBot.config;
  */
 public class TelegramConfig {
 
+    private boolean enabled;
     private String token;
     private int chatId;
 
@@ -48,5 +49,23 @@ public class TelegramConfig {
      */
     public void setChatId(int chatId) {
         this.chatId = chatId;
+    }
+
+    /**
+     * Check if Telegram shall be used
+     *
+     * @return true or false
+     */
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    /**
+     * Sets if Telegram shall be used
+     *
+     * @param enabled boolean
+     */
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 }

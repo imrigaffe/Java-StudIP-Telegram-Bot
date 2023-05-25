@@ -167,7 +167,7 @@ public class StudipTelegramBot {
 
             //Create Summary and send via Telegram
             FileUpdateSummary summary = studIPBot.getUpdateSummary();
-            if (!summary.getNewFiles().isEmpty() || !summary.getUpdatedFiles().isEmpty()) {
+            if (config.getTelegramConfig().isEnabled() && (!summary.getNewFiles().isEmpty() || !summary.getUpdatedFiles().isEmpty())) {
                 StringBuilder telegramMessage = new StringBuilder("\uD83D\uDCC4_" + course.getName() + "_\uD83D\uDCC4\n");
                 if (!summary.getNewFiles().isEmpty()) {
                     telegramMessage.append("*Neue Dateien verfügbar*\n");
