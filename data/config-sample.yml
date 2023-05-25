@@ -5,7 +5,7 @@ blacklist: [
 ]
 courseConfigs: { }
 downloadFolder: "Files"
-googleDrive:
+googleDriveConfig:
   enabled: false
   rootDirectory: "Something"
 startTime: 0
